@@ -12,9 +12,9 @@ var RetinaConfig = {
 
     // server urls
     "mgrast_ftp": "ftp://ftp.mg-rast.org",
-    "mgrast_api": "http://api-dev.mg-rast.org",
-    "shock_url": "http://shock.mg-rast.org",
-    "awe_url": "http://awe.mg-rast.org",
+    "mgrast_api": "https://api.mg-rast.org",
+    "shock_url": "https://shock.mg-rast.org",
+    "awe_url": "https://awe.mg-rast.org",
     
     // versions
     "m5nrversion": "1",
