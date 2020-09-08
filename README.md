@@ -18,7 +18,7 @@ docker build -t mgrast/v4-web .
 
 Example for manual invocation:
 ```bash
-docker run -ti -p80:80 --rm --name mgrast-v4-web mgrast/v4-web
+docker run -ti -p 443:443 -p80:80 --rm --name mgrast-v4-web mgrast/v4-web
 ```
 
 Once that is done, connect to localhost on your machine with your favorite browser. (http://127.0.0.1)

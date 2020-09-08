@@ -26,7 +26,7 @@ function uploadMD() {
 
 function validateMD() {
   if (validationData === null) {
-    var response = UrlFetchApp.fetch("http://api.mg-rast.org/metadata/cv");
+    var response = UrlFetchApp.fetch("https://api.mg-rast.org/metadata/cv");
     validationData = JSON.parse(response.getContentText());
     
     // turn ontologies into simple arrays
@@ -42,7 +42,7 @@ function validateMD() {
   }
   
   if (validationTemplate === null) {
-    var response = UrlFetchApp.fetch("http://api.mg-rast.org/metadata/template");
+    var response = UrlFetchApp.fetch("https://api.mg-rast.org/metadata/template");
     validationTemplate = JSON.parse(response.getContentText());
   }
   
@@ -238,7 +238,7 @@ function loadMD() {
   }
   
   // get the data from the API
-  var response = UrlFetchApp.fetch("http://api.mg-rast.org/metadata/export/mgp"+projectID, {
+  var response = UrlFetchApp.fetch("https://api.mg-rast.org/metadata/export/mgp"+projectID, {
     headers: {
       Authorization: token
     },
